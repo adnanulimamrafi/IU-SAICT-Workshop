@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: red; */
+}
+header {
+  background-image: url(./images/nat-2-large.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: left;
+  background-color: white;
+}
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  width: 25%;
+  text-align: center;
+}
+nav h1 {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+section h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  text-transform: uppercase;
+}
+section h1 {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  margin: 30px 0;
+}
+section p {
+  font-size: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px black;
+  margin-bottom: 40px;
+}
+.btnone {
+  text-transform: uppercase;
+  text-decoration: none;
+  /* background-color: white; */
+ background-color:  rgb(19, 212, 122);
+  color: white;
+  padding: 20px;
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.btntwo {
+  text-transform: uppercase;
+  text-decoration: none;
+  /* background-color: tomato; */
+  background-color:white;
+  /* z-index: -1; */
+  color: black;
+  padding: 20px;
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.change::after {
+  content: "";
+  animation: subjectchange 10s infinite linear;
+  color: rgb(19, 212, 122);
+}
+@keyframes subjectchange {
+  0% {
+    content: "'ilish'";
+  }
+  20% {
+    content: "'jamdani'";
+  }
+  35% {
+    content: "'moslin'";
+  }
+  60% {
+    content: "'pitha'";
+  }
+  80% {
+    content: "'bangla noboborsho'";
+  }
+  100% {
+    content: "'kabadi'";
+  }
+}
